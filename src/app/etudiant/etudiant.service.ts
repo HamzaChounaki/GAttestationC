@@ -27,4 +27,8 @@ import { Etudiant } from '../beans/Etudiant'
         console.log("ici "+ id);
         return this.http.delete(API_URLS.ETUDIANT_URL +`/${id}`);
     }
+
+    getEtudiantById(id:number): Observable<any>{
+        return this.http.get(API_URLS.ETUDIANT_URL+`/${id}`);
+    }
   }

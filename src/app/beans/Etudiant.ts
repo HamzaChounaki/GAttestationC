@@ -8,7 +8,7 @@ export class Etudiant{
     public dateNaissance?: any,
     public lieuNaissance?: string,
     public codeNationale?: string,
-    public niveau?: number,
+    public niveau?: string,
     public etablissement?: any
   )
   {

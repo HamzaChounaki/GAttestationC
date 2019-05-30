@@ -67,4 +67,47 @@ export class EtudiantComponent implements OnInit {
     );
     return this.etablissement;
   }
+
+  addEtudiant(){
+    console.log('etablissement  '+this.selectedEtudiant.etablissement)
+    const e = this.etudiantForm.value;
+    console.log('find by ' + this.findEtablissementById(this.selectedEtudiant.etablissement));
+    if(this.findEtablissementById(this.selectedEtudiant.etablissement)!=null){
+      e.etablissement = this.findEtablissementById(this.selectedEtudiant.etablissement);
+    }    
+    this.etudiantService.addEtudiant(e).subscribe(    
+      res => {
+        this.initEtudiant();
+        this.loadEtablissements();
+      }
+     
+    );
+  }
+
+  updateEtudiant(){
+    if(this.findEtablissementById(this.selectedEtudiant.etablissement)!=null){
+      this.selectedEtudiant.etablissement = this.findEtablissementById(this.selectedEtudiant.etablissement);
+    }  
+    this.etudiantService.updateEtudiant(this.selectedEtudiant).subscribe(
+      res => {
+        this.initEtudiant();
+        this.loadEtudiants();
+        this.operation="add";
+      }
+    );
+  }
+
+  deleteEtudiant(){
+    this.etudiantService.deleteEtudiant(this.selectedEtudiant.id).subscribe(
+      res => {
+        this.selectedEtudiant = new  Etudiant();
+        this.loadEtudiants();
+      }
+    );
+  }
+
+  initEtudiant(){
+    this.selectedEtudiant = new  Etudiant();
+    this.createForm();
+  }
 }
