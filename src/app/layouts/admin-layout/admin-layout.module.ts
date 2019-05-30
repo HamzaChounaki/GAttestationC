@@ -22,6 +22,7 @@ import { ProfilComponent } from '../../profil/profil.component';
 import { EtablissementComponent } from '../../etablissement/etablissement.component';
 import { EmployeComponent } from '../../employe/employe.component';
 import { CompteComponent } from '../../compte/compte.component';
+import { EtudiantComponent } from '../../etudiant/etudiant.component';
 import { AttestationComponent } from '../../attestation/attestation.component';
 
 
@@ -45,6 +46,7 @@ import { AttestationComponent } from '../../attestation/attestation.component';
     MapsComponent,
     NotificationsComponent,
     VilleComponent,
+    EtudiantComponent,
     TypeCompteComponent,
     RegionComponent,
     ProfilComponent,

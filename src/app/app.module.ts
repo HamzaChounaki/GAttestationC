@@ -17,7 +17,8 @@ import { VilleService } from './ville/ville.service';
 import { RegionService } from './region/region.service';
 import { ProfilService } from './profil/profil.service';
 import { TypeCompteService } from './typecompte/typecompte.service';
-import { EtablissementService } from './etablissement/etablissement.service'
+import { EtablissementService } from './etablissement/etablissement.service';
+import { EtudiantService } from './etudiant/etudiant.service';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import { EtablissementService } from './etablissement/etablissement.service'
     AdminLayoutComponent
 
   ],
-  providers: [VilleService,RegionService,ProfilService,TypeCompteService,EtablissementService],
+  providers: [VilleService,RegionService,ProfilService,TypeCompteService,EtablissementService,EtudiantService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

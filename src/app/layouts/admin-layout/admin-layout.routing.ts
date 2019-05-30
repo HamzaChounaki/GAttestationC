@@ -14,6 +14,7 @@ import { TypeCompteComponent } from '../../typecompte/typecompte.component';
 import { RegionComponent } from '../../region/region.component';
 import { ProfilComponent } from '../../profil/profil.component';
 import { EtablissementComponent } from '../../etablissement/etablissement.component';
+import { EtudiantComponent } from '../../etudiant/etudiant.component';
 import { EmployeComponent } from '../../employe/employe.component';
 import { CompteComponent } from '../../compte/compte.component';
 import { AttestationComponent } from '../../attestation/attestation.component';
@@ -26,6 +27,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'typecompte',     component: TypeCompteComponent},
     { path: 'region',         component: RegionComponent},
     { path: 'etablissement',  component: EtablissementComponent},
+    { path: 'etudiant',       component: EtudiantComponent},
     { path: 'compte',         component: CompteComponent},
     { path: 'Attestation',    component: AttestationComponent},
     { path: 'user-profile',   component: UserProfileComponent },
