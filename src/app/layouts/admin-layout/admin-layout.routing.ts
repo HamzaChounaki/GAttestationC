@@ -13,7 +13,6 @@ import { VilleComponent } from '../../ville/ville.component';
 import { TypeCompteComponent } from '../../typecompte/typecompte.component';
 import { RegionComponent } from '../../region/region.component';
 import { ProfilComponent } from '../../profil/profil.component';
-import { EtudiantComponent } from '../../etudiant/etudiant.component';
 import { EtablissementComponent } from '../../etablissement/etablissement.component';
 import { EmployeComponent } from '../../employe/employe.component';
 import { CompteComponent } from '../../compte/compte.component';
@@ -26,7 +25,6 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'ville',          component: VilleComponent},
     { path: 'typecompte',     component: TypeCompteComponent},
     { path: 'region',         component: RegionComponent},
-    { path: 'etudian',        component: EtudiantComponent},
     { path: 'etablissement',  component: EtablissementComponent},
     { path: 'compte',         component: CompteComponent},
     { path: 'Attestation',    component: AttestationComponent},

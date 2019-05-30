@@ -1,5 +1,4 @@
 import { Employe } from './Employe';
-import { Etudiant } from './Etudiant';
 
 export class Attestation{
   constructor(
@@ -7,7 +6,6 @@ export class Attestation{
     public dateSortie?: any,
     public numero?: string,
     public employe?: any,
-    public etudiant?: any
   )
   {
     

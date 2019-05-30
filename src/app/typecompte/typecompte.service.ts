@@ -22,7 +22,7 @@ export class TypeCompteService {
   }
 
   getTypeCompteById(id:number): Observable<any>{
-    return this.http.get(API_URLS.TYPECOMPTE_URL+`/find/${id}`);
+    return this.http.get(API_URLS.TYPECOMPTE_URL+`/${id}`);
 }
 
   updateTypeCompte(typecompte:TypeCompte): Observable<any>{

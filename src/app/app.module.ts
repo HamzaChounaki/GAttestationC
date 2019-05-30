@@ -17,6 +17,7 @@ import { VilleService } from './ville/ville.service';
 import { RegionService } from './region/region.service';
 import { ProfilService } from './profil/profil.service';
 import { TypeCompteService } from './typecompte/typecompte.service';
+import { EtablissementService } from './etablissement/etablissement.service'
 
 
 @NgModule({
@@ -37,7 +38,7 @@ import { TypeCompteService } from './typecompte/typecompte.service';
     AdminLayoutComponent
 
   ],
-  providers: [VilleService,RegionService,ProfilService,TypeCompteService],
+  providers: [VilleService,RegionService,ProfilService,TypeCompteService,EtablissementService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

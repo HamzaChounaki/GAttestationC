@@ -19,7 +19,6 @@ import { VilleComponent } from '../../ville/ville.component';
 import { TypeCompteComponent } from '../../typecompte/typecompte.component';
 import { RegionComponent } from '../../region/region.component';
 import { ProfilComponent } from '../../profil/profil.component';
-import { EtudiantComponent } from '../../etudiant/etudiant.component';
 import { EtablissementComponent } from '../../etablissement/etablissement.component';
 import { EmployeComponent } from '../../employe/employe.component';
 import { CompteComponent } from '../../compte/compte.component';
@@ -49,7 +48,6 @@ import { AttestationComponent } from '../../attestation/attestation.component';
     TypeCompteComponent,
     RegionComponent,
     ProfilComponent,
-    EtudiantComponent,
     EtablissementComponent,
     EmployeComponent,
     CompteComponent,
