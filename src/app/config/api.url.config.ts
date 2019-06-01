@@ -1,6 +1,6 @@
 export const API_URLS = {
     REGION_URL: 'http://localhost:8080/api/region',
-    TYPECOMPTE_URL: 'http://localhost:8080/api/typeCompte',
+    TYPE_URL: 'http://localhost:8080/api/type',
     PROFIL_URL: 'http://localhost:8080/api/profil',
     EMPLOYE_URL: 'http://localhost:8080/api/employe',
     ATTESTATION_URL: 'http://localhost:8080/api/attestation',

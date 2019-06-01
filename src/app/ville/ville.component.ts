@@ -61,7 +61,7 @@ export class VilleComponent implements OnInit {
      this.regionService.getRegionById(id).subscribe(
       data => {this.region = data},
       error => {console.log('ERREUR !!!')},
-      () => {console.log('Le chargement des regions est terminé'+this.region.nom)}
+      () => {console.log('Le chargement des regions est terminé')}
     );
     return this.region;
   }

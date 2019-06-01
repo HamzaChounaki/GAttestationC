@@ -95,7 +95,9 @@
                     <th>
                       CODE NATIONALE
                     </th>
+                    <th>
                       NIVEAU
+                    </th>
                     <th>
                       ETABLISSEMENT
                     </th>
@@ -115,7 +117,7 @@
                       <td>{{etudiant.lieuNaissance}}</td>
                       <td>{{etudiant.codeNationale}}</td>
                       <td>{{etudiant.niveau}}</td>
-                     <td> {{etudiant.etablissement.nom}}</td>
+                      <td> {{etudiant.etablissement.nom}}</td>
                       <td><button class="btn btn-outline-warning"  (click)="selectedEtudiant=etudiant;selectedEtudiant.etablissement=etudiant.etablissement.id ;operation='edit';">Modifier</button></td>
                       <td><button class="btn btn-outline-danger" (click)="selectedEtudiant=etudiant ; deleteEtudiant()" >Supprimer</button></td>
                     </tr>

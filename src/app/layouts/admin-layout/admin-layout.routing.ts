@@ -10,7 +10,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 import { VilleComponent } from '../../ville/ville.component';
-import { TypeCompteComponent } from '../../typecompte/typecompte.component';
+import { TypeComponent } from '../../type/type.component';
 import { RegionComponent } from '../../region/region.component';
 import { ProfilComponent } from '../../profil/profil.component';
 import { EtablissementComponent } from '../../etablissement/etablissement.component';
@@ -24,7 +24,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'employe',        component: EmployeComponent },
     { path: 'profil',         component: ProfilComponent},
     { path: 'ville',          component: VilleComponent},
-    { path: 'typecompte',     component: TypeCompteComponent},
+    { path: 'type',           component: TypeComponent},
     { path: 'region',         component: RegionComponent},
     { path: 'etablissement',  component: EtablissementComponent},
     { path: 'etudiant',       component: EtudiantComponent},

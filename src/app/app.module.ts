@@ -16,9 +16,10 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { VilleService } from './ville/ville.service';
 import { RegionService } from './region/region.service';
 import { ProfilService } from './profil/profil.service';
-import { TypeCompteService } from './typecompte/typecompte.service';
+import { TypeService } from './type/type.service';
 import { EtablissementService } from './etablissement/etablissement.service';
 import { EtudiantService } from './etudiant/etudiant.service';
+import { CompteService } from './compte/compte.service';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { EtudiantService } from './etudiant/etudiant.service';
     AdminLayoutComponent
 
   ],
-  providers: [VilleService,RegionService,ProfilService,TypeCompteService,EtablissementService,EtudiantService],
+  providers: [VilleService,RegionService,ProfilService,TypeService,EtablissementService,EtudiantService,CompteService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

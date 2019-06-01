@@ -1,11 +1,11 @@
-import { TypeCompte } from './TypeCompte';
+import { Type } from './Type'
 
 export class Compte{
   constructor(
     public id?: number,
     public login?: string,
     public password?: string,
-    public typecompte?: any
+    public type?: any
   )
   {
     

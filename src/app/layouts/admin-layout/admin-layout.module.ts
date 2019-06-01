@@ -16,7 +16,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { UpgradeComponent } from '../../upgrade/upgrade.component';
 
 import { VilleComponent } from '../../ville/ville.component';
-import { TypeCompteComponent } from '../../typecompte/typecompte.component';
+import { TypeComponent } from '../../type/type.component';
 import { RegionComponent } from '../../region/region.component';
 import { ProfilComponent } from '../../profil/profil.component';
 import { EtablissementComponent } from '../../etablissement/etablissement.component';
@@ -47,7 +47,7 @@ import { AttestationComponent } from '../../attestation/attestation.component';
     NotificationsComponent,
     VilleComponent,
     EtudiantComponent,
-    TypeCompteComponent,
+    TypeComponent,
     RegionComponent,
     ProfilComponent,
     EtablissementComponent,

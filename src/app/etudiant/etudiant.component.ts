@@ -53,7 +53,8 @@ export class EtudiantComponent implements OnInit {
     loadEtablissements(){
         this.etablissementService.getEtablissements().subscribe(
             data => {this.etablissements = data},
-            error => {console.log('Le chargement des etablissements est terminé')}
+            error => {console.log('ERRUER !!!')},
+            () => {console.log('Le chargement des etablissements est terminé')}
         );
     }
 
