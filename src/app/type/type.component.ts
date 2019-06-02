@@ -10,35 +10,35 @@ import { Type } from '../beans/type'
 })
 export class TypeComponent implements OnInit {
 
-      types : Type[];
-      typeForm: FormGroup;
-      operation : string = 'add';
-      selectedType :Type ;
+  types: Type[];
+  typeForm: FormGroup;
+  operation: string = 'add';
+  selectedType: Type;
 
-      constructor(private typeService : TypeService, private fb: FormBuilder){
-         this.createForm();
-      }
+  constructor(private typeService: TypeService, private fb: FormBuilder) {
+    this.createForm();
+  }
 
   ngOnInit() {
     this.initType();
     this.loadTypes();
   }
 
-  createForm(){
+  createForm() {
     this.typeForm = this.fb.group({
       role: ''
     });
   }
 
-  loadTypes(){
+  loadTypes() {
     this.typeService.getTypes().subscribe(
-      data => {this.types = data},
-      error => {console.log('ERREUR !!!')},
-      () => {console.log('Le chargement des types de compte est terminé' )}
+      data => { this.types = data },
+      error => { console.log('ERREUR !!!') },
+      () => { console.log('Le chargement des types de compte est terminé') }
     );
   }
 
-  addType(){
+  addType() {
     const t = this.typeForm.value;
     this.typeService.addType(t).subscribe(
       res => {
@@ -48,28 +48,28 @@ export class TypeComponent implements OnInit {
     );
   }
 
-  updateType(){
-    console.log("upd  "+this.selectedType.role);
+  updateType() {
+    console.log("Mise a jour " + this.selectedType.role);
     this.typeService.updateType(this.selectedType).subscribe(
       res => {
         this.initType();
         this.loadTypes();
-        this.operation="add";
+        this.operation = "add";
       }
     );
   }
 
-  deleteType(){
+  deleteType() {
     this.typeService.deleteType(this.selectedType.id).subscribe(
       res => {
-        this.selectedType = new  Type();
+        this.selectedType = new Type();
         this.loadTypes();
       }
     );
   }
 
-  initType(){
-    this.selectedType = new  Type();
+  initType() {
+    this.selectedType = new Type();
     this.createForm();
   }
 

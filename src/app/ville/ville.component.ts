@@ -33,8 +33,8 @@ export class VilleComponent implements OnInit {
   createForm(){
     this.villeForm = this.fb.group({
       codePostale: '',
-      nom:'',
-      region:''
+      nom: '',
+      region: ''
     });
   }
 
